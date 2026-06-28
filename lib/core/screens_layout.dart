@@ -17,9 +17,12 @@ class ScreensLayout extends StatelessWidget {
         bottom: false,
         child: Column(
           children: [
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 35),
-              child: topcontent,
+            SizedBox(
+              height: 180,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 35),
+                child: topcontent,
+              ),
             ),
             Expanded(
               child: Container(
