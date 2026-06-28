@@ -5,6 +5,7 @@ import 'package:food_delivery/screens/home_screen/widgets/best_seller_list.dart'
 import 'package:food_delivery/screens/home_screen/widgets/categories_list.dart';
 import 'package:food_delivery/screens/home_screen/widgets/home_banner/home_banner.dart';
 import 'package:food_delivery/screens/home_screen/widgets/icon_container.dart';
+import 'package:food_delivery/screens/home_screen/widgets/recommend_list.dart';
 import 'package:food_delivery/screens/home_screen/widgets/text_search_field.dart';
 import 'package:food_delivery/screens/home_screen/widgets/view_all.dart';
 import 'package:food_delivery/screens/home_screen/widgets/welcome_text.dart';
@@ -48,6 +49,13 @@ class HomeScreen extends StatelessWidget {
             BestSellerList(),
             SizedBox(height: 20),
             HomeBanner(),
+            SizedBox(height: 21),
+            Text(
+              "Recommend",
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+            ),
+            SizedBox(height: 9),
+            RecommendList(),
           ],
         ),
       ),
