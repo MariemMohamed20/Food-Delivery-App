@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery/screens/orders_screen/navigated_screens/cancel_screen.dart';
+import 'package:food_delivery/screens/orders_screen/navigated_screens/review_screen.dart';
 import 'package:food_delivery/screens/orders_screen/widget/custom_order_item.dart';
 import 'package:food_delivery/screens/orders_screen/widget/custome_container.dart';
 
@@ -110,6 +112,14 @@ class _OrderCardWidgetState extends State<OrderCardWidget> {
                               isFirstButtonselected = true;
                               isSecondButtonselected = false;
                             });
+                            if (widget.tabIndex == 0) {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => CancelScreen(),
+                                ),
+                              );
+                            }
                           },
                           child: CustomeContainer(
                             title: widget.tabIndex == 0
@@ -124,6 +134,14 @@ class _OrderCardWidgetState extends State<OrderCardWidget> {
                               isFirstButtonselected = false;
                               isSecondButtonselected = true;
                             });
+                            if (widget.tabIndex == 0) {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => ReviewScreen(),
+                                ),
+                              );
+                            }
                           },
                           child: CustomeContainer(
                             title: widget.tabIndex == 0
