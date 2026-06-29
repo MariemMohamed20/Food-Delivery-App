@@ -7,6 +7,6 @@ class FoodDelivery extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: MyOrderScreen());
+    return const MaterialApp(home: HomeScreen());
   }
 }
