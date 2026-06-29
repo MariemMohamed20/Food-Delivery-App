@@ -72,7 +72,7 @@ class _OnBoardingScreenState extends State<OnBoardingEasyPaymentScreen> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    SvgPicture.asset("assets/icons/icon2.svg"),
+                   SvgPicture.asset("assets/icons/icon2.svg"),
                     const Text(
                       "Easy Payment",
                       style: TextStyle(
