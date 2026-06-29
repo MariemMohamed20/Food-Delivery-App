@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery/food_delivery.dart';
+import 'package:food_delivery/food_delivery_app.dart';
 
 void main() {
-  runApp(const FoodDelivery());
+  runApp(const FoodDeliveryApp());
 }
