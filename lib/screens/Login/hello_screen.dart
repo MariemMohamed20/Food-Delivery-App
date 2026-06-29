@@ -23,8 +23,8 @@ class _HelloState extends State<HelloScreen> {
             children: [
               Padding(
                 padding: const EdgeInsets.symmetric(
-                  horizontal: 20,
-                  vertical: 20,
+                  horizontal: 30,
+                  vertical: 30,
                 ),
                 child: Row(
                   children: [
@@ -58,7 +58,7 @@ class _HelloState extends State<HelloScreen> {
                     topRight: Radius.circular(40),
                   ),
                 ),
-                padding: const EdgeInsets.all(70.0),
+                padding: const EdgeInsets.all(90.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -75,7 +75,7 @@ class _HelloState extends State<HelloScreen> {
                       'Email or Mobile Number',
                       style: TextStyle(
                         fontSize: 16,
-                        fontWeight: FontWeight.bold,
+                        fontWeight: FontWeight.w500,
                         color: Color(0xFF3E1B1B),
                       ),
                     ),
@@ -97,7 +97,7 @@ class _HelloState extends State<HelloScreen> {
                       'Password',
                       style: TextStyle(
                         fontSize: 16,
-                        fontWeight: FontWeight.bold,
+                        fontWeight: FontWeight.w500,
                         color: Color(0xFF3E1B1B),
                       ),
                     ),

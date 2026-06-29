@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery/screens/bottom_nav_bar/bottom_nav_bar_screen.dart';
+import 'package:food_delivery/screens/Login/log_in_screen.dart';
+import 'package:food_delivery/screens/Login/sign_up_screen.dart';
 
 class LaunchWelcomeScreen extends StatelessWidget {
   const LaunchWelcomeScreen({super.key}); 
@@ -24,7 +25,7 @@ class LaunchWelcomeScreen extends StatelessWidget {
             InkWell(
               onTap: () {
                Navigator.pushReplacement(context,
-                MaterialPageRoute(builder: (context) => const BottomNavBarScreen()));
+                MaterialPageRoute(builder: (context) => const LogInScreen()));
               },
               borderRadius: BorderRadius.circular(25), 
               child: Container(
@@ -49,9 +50,9 @@ class LaunchWelcomeScreen extends StatelessWidget {
             const SizedBox(height: 15),
             InkWell(
               onTap: () {
-                Navigator.push(
+                Navigator.pushReplacement(
                   context,
-                  MaterialPageRoute(builder: (context) => const BottomNavBarScreen()),
+                  MaterialPageRoute(builder: (context) => const SignUpScreen()),
                 );
               },
               borderRadius: BorderRadius.circular(25),

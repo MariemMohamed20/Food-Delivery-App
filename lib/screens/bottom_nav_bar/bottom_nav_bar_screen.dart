@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:food_delivery/screens/Login/hello_screen.dart';
-import 'package:food_delivery/screens/Login/log_in_screen.dart';
-import 'package:food_delivery/screens/Login/sign_up_screen.dart';
 
 class BottomNavBarScreen extends StatefulWidget {
   const BottomNavBarScreen({super.key});
@@ -14,9 +11,7 @@ class BottomNavBarScreen extends StatefulWidget {
 class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
   int activeIndex = 0;
   List<Widget> screens = [
-    LogInScreen(),
-    SignUpScreen(),
-    HelloScreen(),
+  
   ];
   @override
   Widget build(BuildContext context) {

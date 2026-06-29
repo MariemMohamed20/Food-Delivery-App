@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:food_delivery/screens/bottom_nav_bar/bottom_nav_bar_screen.dart';
+import 'package:food_delivery/screens/Login/hello_screen.dart';
 
 class LogInScreen extends StatefulWidget {
   const LogInScreen({super.key});
@@ -58,7 +58,7 @@ class _LoginState extends State<LogInScreen> {
                     topRight: Radius.circular(40),
                   ),
                 ),
-                padding: const EdgeInsets.all(30.0),
+                padding: const EdgeInsets.all(60.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -145,7 +145,7 @@ class _LoginState extends State<LogInScreen> {
                               context,
                               MaterialPageRoute(
                                 builder: (context) =>
-                                    const BottomNavBarScreen(),
+                                    const HelloScreen(),
                               ),
                             );
                           },
